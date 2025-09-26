@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tic_tac_toe.css">
+  <title>TIC-TAC-TOE</title>
+</head>
+<body id="main">
+  <p class="gamename" id="gamename">TIC-TAC-TOE GAME</p>
+
+  <div class="displaymatchresult">
+    <p id="displaymatchresult" hidden></p>
+  </div>
+
+  <div class="playbuttoncontainer">
+    <button class="playbutton" id="playbutton" onclick="playButton()">PLAY</button>
+  </div>
+  <div class="playagainbuttoncontainer">
+    <button class="playagainbutton" id="playagainbutton" onclick="playAgainButton()" hidden>PLAY AGAIN</button>
+  </div>
+  <div class="startbuttoncontainer">
+    <button class="startbutton" id="startbutton" onclick="startButton()" hidden>START</button>
+  </div>
+  <div class="quitbuttoncontainer">
+    <button class="quitbutton" id="quitbutton" onclick="quitButton()" hidden>QUIT</button>
+  </div>
+
+<div id="selectbuttons" hidden>
+  <div class="playercontainers">
+    <div class="player1container">
+      <div>
+        <p class="player1" id="player1">
+          PLAYER 1
+        </p>
+      </div>
+      <div>
+        <select class="selectbutton1" id="selectbutton1">
+          <option value="" selected>Options</option>
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </div>
+    </div>
+    <div class="player2container">
+      <div>
+        <p class="player1" id="player2">
+          PLAYER 2
+        </p>
+      </div>
+      <div>
+        <select class="selectbutton2" id="selectbutton2">
+          <option value="" selected>Options</option>
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="optiondisplay">
+  <p id="optiondisplay" hidden></p>
+</div>
+
+<div class="gamecontrols">
+  <div id="gamecontrols" hidden>
+    <div class="playerchoicecontainer">
+      <div>
+        <p class="player1choice">Player 1 Choice</p>
+        <button id="xbutton" class="xbutton"></button>
+      </div>
+      <div>
+        <p class="player2choice">Player 2 Choice</p>
+        <button id="obutton" class="obutton"></button >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="playarea" class="gamelayout" hidden>
+  <div id="box1" class="box" onclick="box(1)"></div>
+  <div id="box2" class="box" onclick="box(2)"></div>
+  <div id="box3" class="box" onclick="box(3)"></div>
+  <div id="box4" class="box" onclick="box(4)"></div>
+  <div id="box5" class="box" onclick="box(5)"></div>
+  <div id="box6" class="box" onclick="box(6)"></div>
+  <div id="box7" class="box" onclick="box(7)"></div>
+  <div id="box8" class="box" onclick="box(8)"></div>
+  <div id="box9" class="box" onclick="box(9)"></div>
+</div>
+
+<div class="playerturns" id="playerturns" hidden>PLAYERTURNS</div>
+
+<script src="tic_tac_toe.js"></script>
+
+</body>
+</html>
