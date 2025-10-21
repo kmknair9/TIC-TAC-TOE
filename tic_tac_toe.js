@@ -231,4 +231,3 @@ function endGame(){
   PlayArea.setAttribute('hidden','hidden');
   document.getElementById('playagainbutton').removeAttribute('hidden');
 }
-
